@@ -121,7 +121,7 @@
   <!-- ============ SCREEN: AUTH ============ -->
   <section id="screen-auth" class="hidden flex-1 flex flex-col fade-in">
     <div class="flex flex-col items-center mb-10">
-      <img src="logo.png" alt="Lumic" onerror="this.style.display='none';document.getElementById('logoFallback').style.display='flex'" class="w-20 h-20 rounded-[20px] object-cover shadow-[0_0_30px_rgba(30,215,96,0.15)] mb-6">
+      <img src="logo.png" alt="Lumic" onerror="this.style.display='none';document.getElementById('logoFallback').style.display='flex'" class="w-20 h-20 rounded-[20px] object-cover shadow-[0_0_30p[...]">
       <div id="logoFallback" class="w-20 h-20 rounded-[20px] bg-[#00A651] items-center justify-center shadow-[0_0_30px_rgba(30,215,96,0.3)] mb-6" style="display:none;">
         <i class="fa-solid fa-wave-square text-black text-3xl"></i>
       </div>
@@ -130,7 +130,7 @@
     </div>
 
     <button onclick="signInWithGoogle()" class="w-full bg-white text-black font-extrabold text-[15px] py-4 rounded-2xl flex items-center justify-center gap-3 spring-bounce mb-6">
-      <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.6 5.1 29.6 3 24 3 12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21c0-1.2-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.6 15.9 18.9 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.6 5.1 29.6 3 24 3 16 3 9.1 7.6 6.3 14.7z"/><path fill="#4CAF50" d="M24 45c5.5 0 10.4-1.9 14.2-5.1l-6.6-5.4C29.6 36.4 26.9 37 24 37c-5.2 0-9.6-3.3-11.2-8l-6.6 5.1C9 40.3 15.9 45 24 45z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.9 2.6-2.5 4.8-4.7 6.3l6.6 5.4C41 36 45 30.6 45 24c0-1.2-.1-2.4-.4-3.5z"/></svg>
+      <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.6-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.6 5.1 29.6 3 [...]"></path></svg>
       Continue with Google
     </button>
 
@@ -159,7 +159,7 @@
       <i class="fa-solid fa-envelope-circle-check text-[#00A651] text-3xl"></i>
     </div>
     <h2 class="text-2xl font-extrabold text-white mb-3">Check your inbox</h2>
-    <p class="text-[15px] text-slate-400 max-w-xs leading-relaxed mb-8">We sent a verification link to <span id="verifyEmailShown" class="text-white font-semibold"></span>. Tap it to finish setting up your account.</p>
+    <p class="text-[15px] text-slate-400 max-w-xs leading-relaxed mb-8">We sent a verification link to <span id="verifyEmailShown" class="text-white font-semibold"></span>. Tap it to finish setti[...]
     <button onclick="showAuthScreen()" class="text-sm text-slate-500 hover:text-white font-bold transition-colors">Use a different email</button>
   </section>
 
@@ -171,7 +171,7 @@
     </div>
     <div class="bg-white/[0.03] border border-white/10 rounded-[20px] p-6 mb-4">
       <label class="text-xs font-extrabold uppercase tracking-widest text-slate-500 mb-3 block">Universal ID</label>
-      <input id="uidInput" type="text" maxlength="20" placeholder="e.g. NOVASOUND" class="w-full bg-transparent text-2xl font-black outline-none uid-chip uppercase text-white placeholder-slate-700" oninput="handleUidInput()">
+      <input id="uidInput" type="text" maxlength="20" placeholder="e.g. NOVASOUND" class="w-full bg-transparent text-2xl font-black outline-none uid-chip uppercase text-white placeholder-slate-70[...]
       <p id="uidStatus" class="text-sm font-semibold mt-4 h-5"></p>
     </div>
     <p class="text-xs text-slate-500 px-2 font-medium">3–20 characters, letters and numbers only.</p>
@@ -185,12 +185,12 @@
     <div class="w-20 h-20 rounded-full bg-[#00A651]/10 border border-[#00A651]/30 flex items-center justify-center mb-6">
       <i class="fa-solid fa-circle-check text-[#00A651] text-3xl"></i>
     </div>
-    <h2 class="text-3xl font-extrabold text-white mb-3 tracking-tight">You're all set</h2>
+    <h2 class="text-2xl font-extrabold text-white mb-3 tracking-tight">You're all set</h2>
     <p class="text-[15px] text-slate-400 max-w-xs leading-relaxed mb-8 font-medium">Your account is ready. Share your ID to get discovered.</p>
     <div class="bg-white/[0.03] border border-white/10 rounded-[20px] px-8 py-5 mb-10 inline-block">
       <p id="welcomeUid" class="uid-chip text-3xl font-black text-[#00A651]"></p>
     </div>
-    <button onclick="window.location.href='lumic.html'" class="bg-white text-black font-extrabold text-[15px] py-4 px-12 rounded-2xl spring-bounce w-full shadow-[0_0_30px_rgba(255,255,255,0.15)]">
+    <button onclick="window.location.href='lumic.html'" class="bg-white text-black font-extrabold text-[15px] py-4 px-12 rounded-2xl spring-bounce w-full shadow-[0_0_30px_rgba(255,255,255,0.15)]"[
       Enter Lumic
     </button>
   </section>
@@ -201,13 +201,14 @@
 <script>
 // ==================== CONFIG ====================
 const SUPABASE_URL = "https://fhogysmvpqakzoxwhxht.supabase.co";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZob2d5c212cHFha3pveHdoeGh0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ3MTg0OTcsImV4cCI6MjEwMDI5NDQ5N30.0WBV1--98XFx_WyL5TkRIsQ1sc-FkUCixv2uf0j8T9g";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZob2d5c212cHFha3pveHdoeGh0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ3MTg0OTcsImV4cCI6MjEwMDI5NDQ5N30.0WB[...]";
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const APP_REDIRECT_URL = window.location.origin + window.location.pathname;
 
 let authMode = "signup"; 
 const LS_UID = "lumic_pending_uid";
+const LS_REF = "lumic_pending_ref"; // store referral code here if present in URL
 
 const HOME_SLIDES = [
   { headline: "Songs made<br>just for you", sub: "Your sound, curated in real time." },
@@ -218,6 +219,13 @@ const HOME_SLIDES = [
 window.addEventListener("DOMContentLoaded", boot);
 
 async function boot() {
+  // capture referral code from query params if present
+  try{
+    const params = new URLSearchParams(window.location.search);
+    const ref = params.get('ref') || params.get('r') || params.get('referral');
+    if (ref) localStorage.setItem(LS_REF, ref.trim());
+  }catch(e){ /* ignore */ }
+
   const { data: { session } } = await supabaseClient.auth.getSession();
   if (session) {
     const done = await routeSessionForward(session);
@@ -408,6 +416,7 @@ async function finalizeOnboarding(session) {
   const user = session.user;
 
   const pendingUid = localStorage.getItem(LS_UID);
+  const pendingRef = localStorage.getItem(LS_REF);
 
   if (!pendingUid) {
     document.getElementById("screen-boot").classList.add("hidden");
@@ -416,15 +425,46 @@ async function finalizeOnboarding(session) {
   }
 
   try {
-    const { error: profileErr } = await supabaseClient.from("profiles").insert({
+    // resolve referred_by id if referral code present
+    let referredById = null;
+    if (pendingRef) {
+      try {
+        const { data: referrer } = await supabaseClient.from('profiles').select('id').eq('referral_code', pendingRef).maybeSingle();
+        if (referrer && referrer.id && referrer.id !== user.id) {
+          referredById = referrer.id;
+        }
+      } catch(e) { console.warn('ref lookup failed', e); }
+    }
+
+    const insertPayload = {
       id: user.id,
       username: pendingUid,
       display_name: (user.email || "").split("@")[0],
-      referred_by: null
-    });
+      referred_by: referredById
+    };
+
+    const { error: profileErr } = await supabaseClient.from("profiles").insert(insertPayload);
     if (profileErr) throw profileErr;
 
+    // record referral relation if applicable
+    if (referredById) {
+      try {
+        await supabaseClient.from('referrals').insert({ referrer_id: referredById, referred_id: user.id });
+      } catch (e) {
+        // ignore unique-constraint errors (already referred)
+        console.warn('referral insert issue', e);
+      }
+      // check if referrer reached threshold
+      try {
+        const { count } = await supabaseClient.from('referrals').select('id', { count: 'exact', head: true }).eq('referrer_id', referredById);
+        if ((count || 0) >= 3) {
+          await supabaseClient.from('profiles').update({ is_premium: true, premium_source: 'referral' }).eq('id', referredById);
+        }
+      } catch(e) { console.warn('referral count check failed', e); }
+    }
+
     localStorage.removeItem(LS_UID);
+    localStorage.removeItem(LS_REF);
 
     document.getElementById("screen-boot").classList.add("hidden");
     document.getElementById("welcomeUid").innerText = pendingUid;
