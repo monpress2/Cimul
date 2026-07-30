@@ -1,9 +1,16 @@
----
-*** Begin Patch
-*** Update File: lumic.html
 @@
--    <div class="flex items-center gap-2 overflow-x-auto no-scrollbar">
-+    <div class="flex items-center gap-2 overflow-x-auto no-scrollbar">
-+      <!-- User gem avatar -->
-+      <div id="userGem" class="mr-2" style="display:none;width:40px;height:40px;border-radius:9px;flex-shrink:0"></div>
+   </div>
+ </header>
+ 
+@@
+   <nav class="fixed bottom-0 left-0 right-0 glass-nav z-40 px-6 py-2.5">
+     <div class="max-w-md mx-auto flex items-center justify-around">
+       <button onclick="switchView('home')" id="tab-home" class="flex flex-col items-center gap-1 text-emerald-400 font-bold transition"><i class="fa-solid fa-house text-lg"></i><span class="text-[...]
+       <button onclick="switchView('search')" id="tab-search" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition"><i class="fa-solid fa-magnifying-glass text-lg[...]
+-      <button onclick="switchView('library')" id="tab-library" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition"><i class="fa-solid fa-layer-group text-lg"><[...]
+-      <button onclick="window.location.href='profile.html'" id="tab-profile" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition"><i class="fa-solid fa-circle-u[...]
++      <button onclick="switchView('library')" id="tab-library" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition" style="position:relative"><i class="fa-solid fa-layer-group text-lg"></i><span class="text-[...]
++      <button onclick="switchView('profile')" id="tab-profile" class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-200 transition"><i class="fa-solid fa-circle-user text-lg"></i><span class="text-[...]
+     </div>
+   </nav>
 *** End Patch
